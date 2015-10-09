@@ -4,7 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    <meta name="description" content="">
+    <meta name="Keywords" content="custom software developers,
+                custom software development, software designers,
+                web developers, software development services,
+                software development, software developers,
+                software development, software company, custom programming,
+                custom software, custom software development,
+                software development company, software development firm,
+                mobile applications, mobile development, ios development,
+                iphone applications, angular developers, angularJS
+                cyberpunk, cyberhulk, geek, nerd, computers,
+                anime, network, manga, The matrix, Ghost in Shell">
+    <meta name="description" content="Cyberhulk.net is a network for software
+                developers, nerds, geeks and cyberpunks, who are passionate
+                about everything that is connected with cyberpunk and coding">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css({.tmp,app}) styles/vendor.css -->
@@ -14,6 +27,54 @@
         <!-- build:css({.tmp,app}) styles/styles.css -->
         <!--<link rel="stylesheet" href="styles/main.css">-->
         <!-- endbuild -->
+        <style type="text/css">
+          body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #000!important;
+            font-size: 1em;
+            font-family: FreeMono,monospace!important;
+            color: #7DF9FF!important;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+          }
+          #logo {
+            float: left;
+            color: #7DF9FF!important;
+            cursor: pointer;
+          }
+          #visit-cyberhulk {
+            float: right;
+            color: #7DF9FF!important;
+            cursor: pointer;
+            position: absolute;
+            right: 0px;
+          }
+          #footer {
+            height: 50px;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            bottom: -30px;
+          }
+          .footer-links {
+            list-style-type: none;
+          }
+          .link {
+            display: inline-block;
+            float: left;
+            font-size: 1em;
+            font-family: FreeMono,monospace!important;
+            color: #7DF9FF!important;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+            padding: 10px;
+          }
+          .right {
+            float: right;
+            margin-right: 20px;
+          }
+        </style>
 </head>
   <body ng-app="App">
     <!--[if lt IE 9]>
@@ -21,11 +82,47 @@
     <![endif]-->
 
     <!--header of application-->
-    <h1>Hello World</h1>
+    <header class="ng-scope">
+ <nav role="navigation" class="navbar navbar-inverse" id="top-menu">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a href="http://albert-cyberhulk.github.io/Angular-Boilerplate/" id="logo" class="navbar-brand">
+        <span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span>
+        Angular Boilerplate
+      </a>
+    </div><!--.navbar-header-->
+    <!-- Collection of nav links, forms, and other content for toggling -->
+  </nav><!--End of navigation-->
+</header>
     <!-- Add your site or application content here -->
     <div class="container" ng-view=""></div>
     <!--footer of application-->
-    <div ng-include src="'views/footer.html'"></div>
+    <div id="footer" class="navbar navbar-inverse">
+      <ul class="footer-links">
+        <li>
+          <a class="link" href="http://www.cyberhulk.net/#/about">
+            Developer
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://github.com/albert-cyberhulk">
+            Developer Apps
+          </a>
+        </li>
+        <li>
+          <a class="link" href="http://cyberhulk.net">
+            <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+            Cyberhulk.net
+          </a>
+        </li>
+        <li class="right">
+          <span class="link">
+            <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>
+            Cyberhulk.net 2015
+          </a>
+        </li>
+      </ul>
+    </div>
         <!-- build:js scripts/vendor.js -->
         <script src="app/bower_components/jquery/dist/jquery.min.js"></script>
         <!-- endbuild -->
@@ -36,5 +133,7 @@
         <!-- endbuild -->
         <!-- @if DEBUG -->
         <!-- @endif -->
+        <script type="text/javascript">
+        </script>
 </body>
 </html>
